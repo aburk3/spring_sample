@@ -5,8 +5,9 @@ import java.util.List;
 
 import com.pluralsight.model.Customer;
 
-public class HibernateCustomerRepositoryImpl {
+public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 	
+	@Override
 	public List<Customer> findAll() {
 		List<Customer> customers = new ArrayList<>();
 		
